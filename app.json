@@ -74,20 +74,25 @@
     },
     "SESSION_ID": {
       "description": "put your SESSION_ID here.",
-      "value": ""
-  
+      "value": ""  
     },
-    "OPENAI_API_KEY": {
-      "description": "put your OPENAI api key here.Get it from beta.openai.com ",
-      "value": "",
+    "READ_STATUS": {
+      "description": "Status Reader",
+      "value": "true",
       "required" :false
     }, 
     "ELEVENLAB_API_KEY": {
       "description": "Put your ElevenLab api key here for Aitts. Watch tutorial from https://youtu.be/HCDcdPtkwg4 ",
       "value": "3a3eea1ac3ea79578cac033ff81e5cd0",
       "required" :false
+       
+    "ELEVENLAB_API_KEY": {
+      "description": "Put your ElevenLab api key here for Aitts. Watch tutorial from https://youtu.be/HCDcdPtkwg4 ",
+      "value": "3a3eea1ac3ea79578cac033ff81e5cd0",
+      "required" :false
     }, 
-    "GURL"description": "Its not that important",
+    "GURL"
+    "description": "Its not that important",
       "value": "https://whatsapp.com/channel/0029VaZ8Q0Y1XquZ673Uvs0m",
       "required" :false
     },
