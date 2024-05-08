@@ -9,21 +9,17 @@
       "description": "Name for Bot Owner",    
       "value": "≛ Willis",
       "required" :true
-    },   
-     
+    }, 
     "WELCOME": {
       "description": "put 'false' or 'true' to enable & disable WELCOME ",
       "value": "true",
       "required" :false
     },
-       
-     
     "IMAGE": {
       "description": "put 'false' or 'true' to enable & disable WELCOME ",
       "value": "https://telegra.ph/file/d7b133573a5a3622775e6.jpg",
       "required" :false
     },
-     
     "GOODBYE": {
       "description": "put 'false' or 'true' to enable & disable GOODBYE ",
       "value": "false",
