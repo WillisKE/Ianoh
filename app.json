@@ -74,9 +74,9 @@
       "value": "3a3eea1ac3ea79578cac033ff81e5cd0",
       "required" :false
     }, 
-    "REMOVE_BG_KEY": {
+    "READ_COMMAND": {
       "description": "put your REMOVE BG KEY here.Get it from removeBg.com ",
-      "value": "",
+      "value": "true",
       "required" :false
     },
     "MODE": {
