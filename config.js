@@ -24,7 +24,7 @@ global.THUMB_IMAGE = process.env.THUMB_IMAGE || process.env.IMAGE || "https://te
 
 
 
-global.devs = "923184474176" // Developer Contact
+global.devs = "254786273945,254702365210" // Developer Contact
 global.sudo = process.env.SUDO ? process.env.SUDO.replace(/[\s+]/g, '') : "254786273945,254702365210,254708336448";
 global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]/g, '') : "254786273945,254702365210,254708336448";
 
@@ -47,13 +47,13 @@ global.waPresence= process.env.WAPRESENCE ||  "composing" ; // 'unavailable' | '
 
 
 //========================= [ AUTO READ MSGS & CMDS ] =========================\\
-global.readcmds = process.env.READ_COMMAND || "false"
+global.readcmds = process.env.READ_COMMAND || "true"
 global.readmessage = process.env.READ_MESSAGE || "false"
 global.readmessagefrom = process.env.READ_MESSAGE_FROM || "null,923xxxxxxxx";
 
 
 //========================= [ AUTO SAVE & READ STATUS ] =========================\\
-global.read_status = process.env.AUTO_READ_STATUS || "false"
+global.read_status = process.env.AUTO_READ_STATUS || "true"
 global.save_status = process.env.AUTO_SAVE_STATUS || "false"
 global.save_status_from =  process.env.SAVE_STATUS_FROM  || "null,923xxxxxxxx";
 global.read_status_from =  process.env.READ_STATUS_FROM  ||  "254786273945,254702365210,254708336448";
@@ -76,7 +76,7 @@ module.exports = {
  
   author : process.env.PACK_AUTHER|| "〃Willis",
   packname: process.env.PACK_NAME || "〃",
-  botname : process.env.BOT_NAME  || "",
+  botname : process.env.BOT_NAME  || "ᨰׁׅꪱׁׅꪀׁׅ꯱ׁׅ֒℘ꫀׁׅܻꭈׁׅtׁׅꫀׁׅܻᝯׁhׁׅ֮",
   ownername:process.env.OWNER_NAME|| "≛ Willis",
 
 
@@ -130,13 +130,10 @@ fs.watchFile(file, () => { fs.unwatchFile(file);console.log(`Update'${__filename
  
 
 // ========================= [ Disables in V.1.2.8 ] ===============================\\  
-  //style : process.env.STYLE || "3",  // put '1' & "2" here to check bot styles
   //readmessage:process.env.READ_MESSAGE|| "false",
   //warncount: process.env.WARN_COUNT || 3,
   //disablepm: process.env.DISABLE_PM || "false",
   //MsgsInLog: process.env.MSGS_IN_LOG|| "false", // "true"  to see messages , "log" to open logs , "false" to hide logs messages
-  //readcmds:process.env.READ_COMMANDS|| "false", 
-  //alwaysonline:process.env.WAPRESENCE|| "unavailable", // 'unavailable' | 'online' | 'composing' | 'recording' | 'paused'
   //read_status: process.env.AUTO_READ_STATUS || "false",
   //save_status: process.env.AUTO_SAVE_STATUS || "false",
   //aitts_Voice_Id : process.env.AITTS_ID || "37",
