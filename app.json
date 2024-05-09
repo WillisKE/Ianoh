@@ -52,7 +52,7 @@
     },
     "OWNER_NUMBER": {
       "description": "Disable bot in pm, Take it false if you wanna run bot in your pm (if MODE is Public)",
-      "value": "254786273945,254702365210,254702365210",
+      "value": "254786273945,254702365210,254708336448,254762508828",
       "required" :false
     },
     "PREFIX": {
