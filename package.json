@@ -68,5 +68,13 @@
    },
    "devDependencies": {
       "pino": "^7.0.5"
-   }
+   },
+   "repository": {
+             "type": "git",
+             "url": "git+https://github.com/WinsperTech/Suhail.git"
+   },
+   "bugs": {
+             "url": "https://github.com/SuhailTechInfo/Suhail-Md/issues"
+   },
+   "homepage": "https://github.com/SuhailTechInfo/Suhail-Md#readme"
 }
