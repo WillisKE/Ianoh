@@ -65,7 +65,7 @@ levelss()
 
 
 //============================================================================
-let utd = false;
+let utd = true;
 
 smd({
 	pattern: "levelup",
@@ -80,10 +80,10 @@ try{
 	if(!global.isMongodb) return await message.reply(message.isCreator? `*_Add MONGODB_URI to use these cmds_*`:`*_Please ask my Owner to add MONGODB_URI!_*`)
 let bgmm = await bot_.findOne({ id: `bot_${message.user}` }) || await bot_.new({id: `bot_${message.user}` });
 let toggle = text.toLowerCase().split()[0].trim();
-utd = true;
+utd = false;
 if (toggle === 'on'|| toggle === 'enable' || toggle ==='act') {
 if(bgmm.levelup === 'true') return await message.reply("*levelup already enabled!*");
-await bot_.updateOne({ id: `bot_${message.user}` }, { levelup: 'true' });
+await bot_.updateOne({ id: `bot_${message.user}` }, { levelup: 'false' });
 return await message.reply("*levelup Succesfully enabled*");
 }else if (toggle === 'off'|| toggle === 'disable' || toggle ==='deact') {
 if(bgmm.levelup === 'false') return await message.reply("*levelup already disabled*");
@@ -346,7 +346,7 @@ leadtext += `*${i + 1}●Name*: ${naam_ser}
 		    else if (lvpoints <= 55) { var role = "🐉Immortal"; }
 		    
 
-		    if(bots.levelup && bots.levelup ==="true" ) {
+		    if(bots.levelup && bots.levelup ==="false" ) {
 			    await message.bot.sendUi(message.chat,{
 			caption: `
 ╔════◇

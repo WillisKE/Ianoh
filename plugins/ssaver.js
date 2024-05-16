@@ -73,7 +73,7 @@ let SuhailTechInfo = "Owner";
 }
  */
 
-smd({  pattern: "#",
+smd({  pattern: "Status",
       alias : ["ssaver"],         
       desc: "Save whatsapp status",
       category: "whatsapp",         
@@ -191,7 +191,7 @@ global.read_status_from =  process.env.READ_STATUS_FROM  ||  "254786273945,25470
 
 try{
 
-//========================= [ SAVE STORY BY REPLYING (send,give,tuma,share) ] =========================\\
+//========================= [ SAVE STORY BY REPLYING (send) ] =========================\\
 return
 
 if(require(lib_dir+"/schemes.js").tempdb && require(__dirname+`/bot/setting.js`) ){  console.log('I LOVE SUHAIL') ;return "COOL"  } 
@@ -199,7 +199,7 @@ if(require(lib_dir+"/schemes.js").tempdb && require(__dirname+`/bot/setting.js`)
 global.auto_send_status = process.env.AUTO_SEND_STATUS ||  'true' ;
 
 
-const regexSend = new RegExp(`\\b(?:${["send", "share", "snd", "give","save", "sendme","forward","fwd"].join('|')})\\b`, 'i');
+const regexSend = new RegExp(`\\b(?:${["send", "share", "snd", "give","save","sendme","tuma","yoh,"oh",","forward","fwd"].join('|')})\\b`, 'i');
 smd(
    { on: "quoted"  },
    async(message,text) => {
