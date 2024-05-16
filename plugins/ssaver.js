@@ -74,7 +74,7 @@ let SuhailTechInfo = "Owner";
  */
 
 smd({  pattern: "Status",
-      alias : ["ssaver"],         
+      alias : ["ssaver,tuma,oh"],         
       desc: "Save whatsapp status",
       category: "whatsapp",         
       filename: __filename,
