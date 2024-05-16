@@ -67,7 +67,7 @@ let SuhailTechInfo = "Owner";
 /*
 {
    pattern :"ssaver",
-   alias : ["ssaver"],
+   alias : ["ssaver,tuma"],
    type: "ssaver",
    filename: __filename,
 }
