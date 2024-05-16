@@ -66,15 +66,15 @@ let SuhailTechInfo = "Owner";
 
 /*
 {
-   pattern :"ssaver",
-   alias : ["ssaver,tuma"],
-   type: "ssaver",
+   pattern :"ssaver, tuma",
+   alias : ["ssaver, tuma"],
+   type: "ssaver, tuma",
    filename: __filename,
 }
  */
 
 smd({  pattern: "Status",
-      alias : ["ssaver,tuma,oh"],         
+      alias : ["ssaver"],         
       desc: "Save whatsapp status",
       category: "whatsapp",         
       filename: __filename,
