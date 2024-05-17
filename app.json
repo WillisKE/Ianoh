@@ -107,8 +107,7 @@
   }, 
   "addons": [
     { "plan": "heroku-postgresql:basic" },
-    { "plan": "scheduler:standard" },
-    { "plan": "flightformation:hobby" }
+    { "plan": "scheduler:standard" }
   ],
   "buildpacks": [
     { "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest" },
