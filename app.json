@@ -22,7 +22,7 @@
     }, 
     "HEROKU_API_KEY": {
       "description": "Put Your Heroku Api Key Here",
-      "value": "96e60a13-1096-40d8-851d-a280e2a07bc5",
+      "value": "HRKU-26ad0fbf-58ab-4aee-b161-3144d6b29cf5",
       "required" :true 
     },   
     "HEROKU_APP_NAME": {
@@ -33,7 +33,7 @@
     "WAPRESENCE": {
       "description": "Fill the value: 'unavailable'(for nothing) | 'available'(for alwaysonline) | 'composing'(for typing) | 'recording' | 'paused' ",
       "required" :false,
-      "value": "composing"
+      "value": "typing"
     },
     "AUTO_READ_STATUS": {
       "description": "Fill the value true if you want bot view your Statuses.",
