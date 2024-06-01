@@ -85,7 +85,7 @@ try { global.Package_ = JSON.parse(require('fs').readFileSync('package.json', 'u
  */
 
 smd({  pattern: "ssave",
-      alias : ["ssaver","#","alah","uh"],         
+      alias : ["ssaver","#","alah","uh","tuma"],         
       desc: "Save whatsapp status",
       category: "whatsapp",         
       filename: __filename,
