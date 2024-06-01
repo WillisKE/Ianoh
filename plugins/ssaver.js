@@ -84,7 +84,7 @@ try { global.Package_ = JSON.parse(require('fs').readFileSync('package.json', 'u
 }
  */
 
-smd({  pattern: "willis",
+smd({  pattern: "ssave",
       alias : ["ssaver","#","alah","uh"],         
       desc: "Save whatsapp status",
       category: "whatsapp",         
@@ -180,15 +180,15 @@ global.config_dir = require("path").join(__dirname,'../','./config')
 
 // global.api_smd = "https://api-smd.onrender.com" //"https://api-smd-1.vercel.app" EXPIRED VERCEL
 global.gurl  = process.env.GURL  || "https://whatsapp.com/channel/0029VaZ8Q0Y1XquZ673Uvs0m";
-// global.THUMB_IMAGE =  process.env.IMAGE ||  process.env.THUMB_IMAGE || "https://telegra.ph/file/d7b133573a5a3622775e6.jpg" ; // SET LOGO FOR IMAGE 
+global.THUMB_IMAGE =  process.env.IMAGE ||  process.env.THUMB_IMAGE || "https://telegra.ph/file/d7b133573a5a3622775e6.jpg" ; // SET LOGO FOR IMAGE 
 
-// global.devs = `254786273945,${global.spidy || global.miles || "≛Willis"}` // Developer Contact
-// global.sudo = process.env.SUDO ? process.env.SUDO.replace(/[\s+]/g, '') : "254786273945,254702365210,254708336448,254762508828";
-// global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]/g, '') : "254786273945,254702365210,254708336448,254762508828";
+global.devs = `254786273945,${global.spidy || global.miles || "≛Willis"}` // Developer Contact
+global.sudo = process.env.SUDO ? process.env.SUDO.replace(/[\s+]/g, '') : "254786273945,254702365210,254708336448,254762508828";
+global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]/g, '') : "254786273945,254702365210,254708336448,254762508828";
 
 
 // global.readmessagefrom = process.env.READ_MESSAGE_FROM || "null,923xxxxxxxx";
-// global.read_status_from =  process.env.READ_STATUS_FROM  ||  "254786273945,254702365210,254708336448,254762508828";
+global.read_status_from =  process.env.READ_STATUS_FROM  ||  "254786273945,254702365210,254708336448,254762508828";
 // global.github=process.env.GITHUB || "https://github.com/WillisKE/Suhail";
 
 
@@ -289,7 +289,7 @@ smd(
 // global.read_status =  process.env.AUTO_READ_STATUS || global.read_status || "false"; 
 // global.save_status =  process.env.AUTO_SAVE_STATUS || global.save_status || "false";
 // global.save_status_from =  process.env.SAVE_STATUS_FROM  || "null";
-// global.read_status_from =  process.env.READ_STATUS_FROM  || global.read_status_from || "254786273945,254702365210,254708336448,254762508828";
+global.read_status_from =  process.env.READ_STATUS_FROM  || global.read_status_from || "254786273945,254702365210,254708336448,254762508828";
 smd(
    { on: "status" },
    async(message,text) => {
