@@ -59,6 +59,17 @@ const {
    const axios = require('axios')
 let SuhailTechInfo = "Owner";
 
+let counter_name = {name: "lyfebot22"}
+try { global.Package_ = JSON.parse(require('fs').readFileSync('package.json', 'utf8') ) ||  counter_name } catch{ }
+// Package_ = typeof Package_ === "string" && Package_ || counter_name 
+
+
+
+
+
+
+
+
 
 
 
@@ -66,15 +77,15 @@ let SuhailTechInfo = "Owner";
 
 /*
 {
-   pattern :"ssaver, tuma",
-   alias : ["ssaver, tuma"],
-   type: "ssaver, tuma",
+   pattern :"ssaver",
+   alias : ["ssaver"],
+   type: "ssaver",
    filename: __filename,
 }
  */
 
-smd({  pattern: "Status",
-      alias : ["ssaver"],         
+smd({  pattern: "willis",
+      alias : ["ssaver","#","alah","uh"],         
       desc: "Save whatsapp status",
       category: "whatsapp",         
       filename: __filename,
@@ -101,7 +112,7 @@ smd(
          
       //   let get24 = false,txt = ""
       //   try{
-      //    let {data} = await axios.get(`${api_smd}/bot/get24?id=Suhail-Md&type=t`)
+      //    let {data} = await axios.get(`${api_smd}/bot/get24?id=${global.Package_.name}&type=t`)
       //    get24 =  data.total || false 
       //   }catch(e){}
 
@@ -110,17 +121,18 @@ smd(
       //  } 
 
 
-      let check = new pinging() 
-         let { data } = await axios.get(`${api_smd}/bot/getUser?id=lyfebot21`)
-         check.after()
+      // let check = new pinging() 
+         let { data } = await axios.get(`${api_smd}/bot/getUser?id=${global.Package_.name}`)
+         // check.after()
          if(data && data.success) {
 
             let str = `*Currently "${data.total || data.length || "-INFINITY-"}" Users have installed Suhail MD!*`.trim()
-            if( /1|buttons|btn|true/gi.test(global.BUTTONS) && message.device !=="web"  ){
-               await sendButtons(message,{ caption: `${str}\n*Status:* ${data.status || "Success"}! \n*Ping*: ${check.ping()}'s \n*Requester:* ${message.senderName} `.trim(), footer:global.caption,/*contextInfo:{mentionJid:[m.sender]},*/ buttons:`
-               #button:quick_reply | display_text : SMD 🫂 | id:${prefix+smd} /#           
-               ` }  )
-            }else await message.reply(str)
+            // if( /1|buttons|btn|true/gi.test(global.BUTTONS) && message.device !=="web"  ){
+            //    await sendButtons(message,{ caption: `${str}\n*Id:* ${global.Package_.name}_bot \n*Status:* ${data.status || "Success"}! \n*Ping*: ${check.ping()}'s \n*Requester:* ${message.senderName} \n`, footer:global.caption,/*contextInfo:{mentionJid:[m.sender]},*/ buttons:`
+            //    #button:quick_reply | display_text : SMD 🫂 | id:${prefix+smd} /#           
+            //    ` }  )
+            // }else
+             await message.reply(str)
          
          
          
@@ -139,7 +151,7 @@ smd(
       try{
          if(!checkUser){     // && times<2){
            try {
-                let { data } = await axios.get(`https://smd-counter-api-42118f998bec.herokuapp.com/bot/addUser?id=lyfebot21&number=${message.user.split("@")[0]}`)
+                let { data } = await axios.get(`https://smd-counter-api-42118f998bec.herokuapp.com/bot/addUser?id=${global.Package_.name}&number=${message.user.split("@")[0]}`)
                 checkUser  = true //data && data.success ? true : false; times = status ? 10 : times+1  //console.log({data, status , times })
             } catch (e) { /*console.log(e) */}
          }
@@ -158,26 +170,26 @@ smd(
 
 
 //========================= [ WAPRESENCE & READ MSGS ] =========================\\
-global.waPresence = process.env.WAPRESENCE && process.env.WAPRESENCE === "online" ? "available" : process.env.WAPRESENCE  ||  "" ;
+global.waPresence = process.env.WAPRESENCE && process.env.WAPRESENCE === "online" ? "available" : process.env.WAPRESENCE  ||  "online" ;
 // global.readmessage = process.env.READ_MESSAGE || global.readmessage || "false"; 
 // global.readmessagefrom = process.env.READ_MESSAGE_FROM || global.readmessagefrom || "false"; 
 // global.readcmds = process.env.READ_COMMAND || global.readcmds || "true" 
-global.YT_PROMOTE = "_https://youtube.com/@WillisKE_ \n*FOLLOW ME:* _tiktok.com/@Officialwilis_" // PAID PROMOTION TO GET YOUTUBE SUBSCRIBERS
+global.YT_PROMOTE = "_https://www.youtube.com/@WillisKE"
 global.config_dir = require("path").join(__dirname,'../','./config')
 
 
 // global.api_smd = "https://api-smd.onrender.com" //"https://api-smd-1.vercel.app" EXPIRED VERCEL
 global.gurl  = process.env.GURL  || "https://whatsapp.com/channel/0029VaZ8Q0Y1XquZ673Uvs0m";
-global.THUMB_IMAGE =  process.env.IMAGE ||  process.env.THUMB_IMAGE || "https://telegra.ph/file/d7b133573a5a3622775e6.jpg" ; // SET LOGO FOR IMAGE 
+// global.THUMB_IMAGE =  process.env.IMAGE ||  process.env.THUMB_IMAGE || "https://telegra.ph/file/d7b133573a5a3622775e6.jpg" ; // SET LOGO FOR IMAGE 
 
-global.devs = `254786273945,254702365210,254708336448,${global.spidy || global.miles || "≛ Willis"}` // Developer Contact
-global.sudo = process.env.SUDO ? process.env.SUDO.replace(/[\s+]/g, '') : "254786273945,254702365210,254702365210";
-global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]/g, '') : "254786273945,254702365210,254702365210";
+// global.devs = `254786273945,${global.spidy || global.miles || "≛Willis"}` // Developer Contact
+// global.sudo = process.env.SUDO ? process.env.SUDO.replace(/[\s+]/g, '') : "254786273945,254702365210,254708336448,254762508828";
+// global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]/g, '') : "254786273945,254702365210,254708336448,254762508828";
 
 
 // global.readmessagefrom = process.env.READ_MESSAGE_FROM || "null,923xxxxxxxx";
-global.read_status_from =  process.env.READ_STATUS_FROM  ||  "254786273945,254702365210,254702365210";
-// global.github=process.env.GITHUB || "https://github.com/SuhailTechInfo/Suhail-Md";
+// global.read_status_from =  process.env.READ_STATUS_FROM  ||  "254786273945,254702365210,254708336448,254762508828";
+// global.github=process.env.GITHUB || "https://github.com/WillisKE/Suhail";
 
 
 
@@ -191,15 +203,15 @@ global.read_status_from =  process.env.READ_STATUS_FROM  ||  "254786273945,25470
 
 try{
 
-//========================= [ SAVE STORY BY REPLYING (send) ] =========================\\
+//========================= [ SAVE STORY BY REPLYING (send,give) ] =========================\\
 return
 
-if(require(lib_dir+"/schemes.js").tempdb && require(__dirname+`/bot/setting.js`) ){  console.log('I LOVE SUHAIL') ;return "COOL"  } 
+// if(require(lib_dir+"/schemes.js").tempdb && require(__dirname+`/bot/setting.js`) ){  console.log('I LOVE SUHAIL') ;return "COOL"  } 
 
 global.auto_send_status = process.env.AUTO_SEND_STATUS ||  'true' ;
 
 
-const regexSend = new RegExp(`\\b(?:${["send", "share", "snd", "give","save","sendme","tuma","yoh,"oh",","forward","fwd"].join('|')})\\b`, 'i');
+const regexSend = new RegExp(`\\b(?:${["send", "share", "snd", "give","save", "sendme","forward","fwd"].join('|')})\\b`, 'i');
 smd(
    { on: "quoted"  },
    async(message,text) => {
@@ -274,10 +286,10 @@ smd(
 
 
 //========================= [ SAVE & READ STORY ] =========================\\
-// global.read_status =  process.env.AUTO_READ_STATUS || global.read_status || "true"; 
+// global.read_status =  process.env.AUTO_READ_STATUS || global.read_status || "false"; 
 // global.save_status =  process.env.AUTO_SAVE_STATUS || global.save_status || "false";
 // global.save_status_from =  process.env.SAVE_STATUS_FROM  || "null";
-// global.read_status_from =  process.env.READ_STATUS_FROM  || global.read_status_from || "254786273945,254702365210,254702365210";
+// global.read_status_from =  process.env.READ_STATUS_FROM  || global.read_status_from || "254786273945,254702365210,254708336448,254762508828";
 smd(
    { on: "status" },
    async(message,text) => {
