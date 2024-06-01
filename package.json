@@ -1,21 +1,16 @@
 {
-   "name": "Suhail",
-   "version": "2.5.0",
-   "description": "Multi device whatsapp bot by WinsperTech....",
-   "main": "index.js",
+   "name": "suhail-md",
+   "version": "1.2.8",
+   "description": "Multi device whatsapp bot by SuhailTechInfo.",
+   "main": "lib/client.js",
    "type": "commonjs",
    "scripts": {
-      "run": "pm2 start . --deep-monitoring --attach --name WinsperTech || node .",
-      "WinsperTech ": "pm2 start . --deep-monitoring --attach --name WinsperTech || node .",
-      "start": "pm2 start . --attach --name WinsperTech",
-      "stop": "pm2 stop WinsperTech",
-      "heroku-postbuild": "git clone https://github.com/WinsperTech/Suhail.git temp && mv temp/.git .git && rm -rf temp && npx puppeteer@latest install  --y",
-      "fis-heroku-postbuild": "git clone https://github.com/WinsperTech/Suhail.git temp1 && rsync -av temp1/* ./ && rsync -av temp1/.* ./ && rm -rf temp1 && npm i && npx puppeteer@latest install",
-      "postinstall": "npx puppeteer@latest install --y"
+             "start": "pm2 start lib/client.js --deep-monitoring --attach --name Suhail",
+             "stop": "pm2 stop Suhail"             
    },
-   "author": "WinsperTech",
-   "license": "Apache-2.0",
-   "dependencies": {
+   "author": "SuhailTechInfo",
+  
+   "dependencies": { 
       "@adiwajshing/keyed-db": "^0.2.4",
       "@hapi/boom": "^9.1.4",
       "@whiskeysockets/baileys": "6.6.0",
