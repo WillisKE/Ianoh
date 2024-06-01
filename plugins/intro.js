@@ -66,7 +66,7 @@ let text = `╭═══ ━ ━ ━ ━ • ━ ━ ━ ━ ═══♡᭄
  //---------------------------------------------------------------------------
  smd({
              pattern: "willis",
-             alias : ["intro","willis"]
+             alias : ["intro","willis"],
              desc: "Show intro of user",
              category: "whatsapp",
              filename: __filename,
