@@ -15,16 +15,6 @@
       "value": "",
     "required" :true
     },
-    "AUTO_READ_STATUS": {
-      "description": "Fill the value true if you want bot view your Statuses.",
-      "required" :false,
-      "value": "true"
-    },
-    "READ_MESSAGE": {
-      "description": "Fill the value true if you want bot to read all messages.",
-      "required" :false,
-      "value": "false"
-    },
     "PREFIX": {
       "description": "Enter your desired prefix for bot.",
       "value": "."
