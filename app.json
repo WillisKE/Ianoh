@@ -5,7 +5,6 @@
   "app_url": "/suhail/",
   
   "env": {
-    }
     "HEROKU_API_KEY": {
       "description": "Put Your Heroku Api Key Here",
       "value": "HRKU-26ad0fbf-58ab-4aee-b161-3144d6b29cf5",
