@@ -5,7 +5,7 @@
   "app_url": "/suhail/",
   
   "env": {
-    }, 
+    }
     "HEROKU_API_KEY": {
       "description": "Put Your Heroku Api Key Here",
       "value": "HRKU-26ad0fbf-58ab-4aee-b161-3144d6b29cf5",
@@ -38,6 +38,7 @@
       "description": "put your OPENAI api key here.Get it from beta.openai.com ",
       "value": "",
       "required" :false
+    }
     },
     "MODE": {
       "description": "Worktype of your bot. Use public or private, if it is private then only bot number can use it. If public then everyone can use it.",
